@@ -4,7 +4,7 @@ youbot_simulation
 Packages to run the KUKA youBot in the Gazebo simulation with ROS
 
 # Fork description
-This fork introduces is focused on the use of the Youbot in Gazebo under ROS Noetic.
+This fork introduces is focused on the use of the Youbot in Gazebo under ROS Noetic. **Note that some other changes has been made as well, please check the commits for more information!**
 ## Installation instructions
 - `cd <your catkin_ws>/src`
 - `git clone git@github.com:Tstienstra/youbot_description.git -b noetic-devel`
