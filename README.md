@@ -6,13 +6,15 @@ Packages to run the KUKA youBot in the Gazebo simulation with ROS
 # Fork description
 This fork introduces is focused on the use of the Youbot in Gazebo under ROS Noetic. **Note that some other changes has been made as well, please check the commits for more information!**
 ## Installation instructions
-- `cd <your catkin_ws>/src`
-- `git clone git@github.com:Tstienstra/youbot_description.git -b noetic-devel`
-- `git clone git@github.com:Tstienstra/youbot_simulation.git`
-- `sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers ros-noetic-gazebo-ros-control`
-- `sudo apt install ros-noetic-pr2-msgs`
-- `cd ..`
-- `catkin_make`
+```bash
+cd <your catkin_ws>/src
+git clone git@github.com:Tstienstra/youbot_description.git -b noetic-devel
+git clone git@github.com:Tstienstra/youbot_simulation.git
+sudo apt-get install ros-${ROS_DISTRO}-ros-control ros-${ROS_DISTRO}-ros-controllers ros-${ROS_DISTRO}-gazebo-ros-control
+sudo apt install ros-${ROS_DISTRO}-pr2-msgs
+cd ..
+catkin_make
+```
 
 You should now be able to launch: `roslaunch youbot_gazebo_robot youbot.launch` and control the youbot. Example message to control the arm:
 ```
